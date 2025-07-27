@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Confession</title>
+  <link rel="stylesheet" href="1style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Click the button to see my feelings for you</h1>
+    <button id="revealbutton">Reveal</button>
+
+    <div id="heartcontainer" class="hidden">
+      <div class="heart">❤️</div>
+      <p>I LOVE YOU!</p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('revealbutton').addEventListener('click', function () {
+      document.getElementById('heartcontainer').classList.remove('hidden');
+    });
+  </script>
+<script src="1style.css"></script>
+</body>
+</html>
